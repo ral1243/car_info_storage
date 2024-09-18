@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/1.css">
+    <script src="js/1.js"></script>  
+    <meta charset="UTF-8">
+<body>
+    <img src="img/logo.png" alt="Logo Here">
+    <input type="text" id="mySearch"   placeholder="Search..." title="Type in a category"> <!--onkeyup="myFunction()" -->
+    <div id="loginInfo">
+                <form id="form1">
+              <input type="text" id="idInput" placeholder="email/number">
+              <input type="password" id="passwordInput" placeholder="password" onmousedown="pswSee()" onmouseup="pswHide()">
+            </form>
+              <button type="button" id="loginSave">Login</button>
+    </div>
+    <hr id="line1">
+    <div id="stuffBox">
+
+    </div> 
+    <div id="filterDrop">
+      <button onclick="filterDrop()" id="filterButton">Filter</button>
+      <div id="myDrop" class="dropContent">
+      <a>
+        <p>Automašīnas reģistrācijas nummurs</p>
+          <input type="text" id="regNumber" placeholder="reģistrācijas nummurs">
+      </a>
+      <a>
+        <p>Automašīnas marka</p>
+        <input type="text" list="mark" />
+        <datalist id="mark">
+          <option>Toyota</option><option>BMW</option><option>Ford</option><option>Mercedes-Benz</option><option>Honda</option><option>Chevrolet</option><option>Volkswagen</option><option>Nissan</option><option>Audi</option><option>Hyundai</option><option>Kia</option><option>Subaru</option><option>Jeep</option><option>Lexus</option><option>Volvo</option><option>Mazda</option><option>Tesla</option><option>Land Rover</option><option>Peugeot</option><option>Jaguar</option>
+        </datalist>
+      </a>
+      <a>
+        <p>Automašīnas modelis</p>
+        <input type="text" list="model" />
+        <datalist id="model">
+          <option>Volvo</option><option>Saab</option><option>Mercedes</option><option>Audi</option>
+        </datalist>
+      </a>
+      <a>
+      <p>Automašīnas svars(kilogrami)</p>
+          <input type="text" id="weight" placeholder="piem. 1900">
+      </a>
+      <a><button type="submit" onclick="filterSave()" >Filtrēt</button></a>
+      </div>
+    </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div id="addDrop">
+      <button onclick="addButton()" id="addButton">Add Car</button>
+      <form action="php/addCar.php" method="GET">
+        <div id="myAdd" class="addContent">
+          <a>
+            <p>Automašīnas reģistrācijas nummurs</p>
+              <input type="text" id="regNumberadd" name="regNumberadd" placeholder="reģistrācijas nummurs">
+          </a>
+          <a>
+            <p>Automašīnas marka</p>
+            <input type="text" id="markadd" list="mark" />
+            <datalist id="mark" >
+              <option>Toyota</option><option>BMW</option><option>Ford</option><option>Mercedes-Benz</option><option>Honda</option><option>Chevrolet</option><option>Volkswagen</option><option>Nissan</option><option>Audi</option><option>Hyundai</option><option>Kia</option><option>Subaru</option><option>Jeep</option><option>Lexus</option><option>Volvo</option><option>Mazda</option><option>Tesla</option><option>Land Rover</option><option>Peugeot</option><option>Jaguar</option>
+            </datalist>
+          </a>
+          <a>
+            <p>Automašīnas modelis</p>
+            <input type="text" id="modeladd" list="model" />
+            <datalist id="model" >
+              <option>Volvo</option><option>Saab</option><option>Mercedes</option><option>Audi</option>
+            </datalist>
+          </a>
+          <a>
+          <p>Automašīnas svars(kilogrami)</p>
+              <input type="text" id="weightadd" name="weightadd" placeholder="piem. 1900">
+          </a>
+        </form>
+          <a><button type="button" onclick="saveCar()">Pievienot</button></a>
+        </div> 
+    </div>
+    <p>aaaa</p>
+   <!-- <script> if(document.getElementById("loginInfo").offsetLeft < 644){document.getElementById("mySearch").style.display = "none";} else {document.getElementById("mySearch").style.display = "block";}</script> -->
+</body>
+</head>
+</html>

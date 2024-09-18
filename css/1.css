@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(105, 105, 105);
+  }
+  img {
+    width:200px;height:50px; border: 1px solid #555;
+  }
+  #mySearch{
+    width:  40%;left: 21.3%;font-size: 18px;padding: 14px;border: 1px solid #ddd;position: absolute;top: 9px;
+  }
+  #loginInfo{
+    right: 8px;top: 9px;position: absolute;
+  }
+  #loginSave{
+    width:343px; height:21px;
+  }
+  #line1{
+    height:5px;background-color:white
+  }
+  #stuffBox{
+    background-color: white;width: 63%;height: 600px;border: 3px solid black;overflow: scroll;
+  }
+  #filterDrop{
+    position: absolute; right: 307px;top: 100px; cursor: pointer;
+  }
+  #filterButton{
+    cursor: pointer;
+  }
+  .dropContent{
+    display: none;position: absolute;background-color: #f1f1f1;min-width: 342px;overflow: auto;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;
+  }
+  .dropContent a{
+    color: black;padding: 12px 16px;text-decoration: none;display: block;
+  }
+  .show {display: block;}
+  #addDrop{
+    position: absolute; right: 287px;top: 670px; cursor: pointer;
+  }
+  .addContent{
+    display: none;position: absolute;background-color: #f1f1f1;min-width: 342px;overflow: auto;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;bottom: 22px;
+  }
+  .addContent a{
+    color: black;padding: 12px 16px;text-decoration: none;display: block;
+  }
+  .addshow {display: block;}
+  #addButton{
+    cursor: pointer;
+  }
+  #carInfo{
+    border: 10px solid black;background-color: rgb(86, 73, 73);width: 80%; height: 100px;
+  }
