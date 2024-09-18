@@ -1,1 +1,1 @@
-tabula kur var saglabā informāciju par mašīnām, un tās parāda uz tabulas, bet nekad nepabeidzu.
+tabula, kur var saglabā informāciju par mašīnām, un tās parāda uz tabulas, bet nekad nepabeidzu.
